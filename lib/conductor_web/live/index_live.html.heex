@@ -1,0 +1,37 @@
+<div id="app" phx-hook="sync">
+  <div id="home-screen" class={"screen #{if @started do "invisible" end}"}>
+    <div class="big-logo mb-12">
+      <img src={~p"/images/conductor.png"} class="w-full max-w-sm" />
+    </div>
+    <a id="start-button" class="button mb-12 large"
+        phx-click="start" {%{disabled: not @ready}}>
+      Start</a>
+  </div>
+  <div class={if not @started do "invisible" end}>
+    <div class={if @demo != :push do "invisible" end}>
+      <div id="play-screen" class="screen">
+        <div class="small-logo my-8">
+          <img class="w-full max-w-72"
+              src={~p"/images/conductor.png"}
+          />
+        </div>
+        <div class="mb-16 relative">
+          <img id="speaker" class="w-60"
+              src={~p"/images/speaker.png"}
+          />
+        </div>
+      </div>
+      <ul id="play-sounds" class="invisible" phx-update="stream">
+        <li :for={{dom_id, sound} <- @streams.sounds}
+            id={dom_id}
+            data-sound={sound.name}
+            data-speed={sound.speed}
+            phx-hook="play"
+        />
+      </ul>
+    </div>
+    <div class={if @demo != :sync do "invisible" end}>
+      <div id="sync-app" phx-update="ignore" />
+    </div>
+  </div>
+</div>

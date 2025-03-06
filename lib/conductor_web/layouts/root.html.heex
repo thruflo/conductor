@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" class="[scrollbar-gutter:stable]">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="csrf-token" content={get_csrf_token()} />
+    <.live_title suffix=" · Phoenix Framework">
+      {assigns[:page_title] || "Conductor"}
+    </.live_title>
+    <link phx-track-static rel="stylesheet" href={~p"/assets/app.css"} />
+    <script defer phx-track-static src={~p"/assets/index.js"}>
+    </script>
+    <script>
+      window.ASSET_MANIFEST = <%= asset_manifest() %>
+      window.MINIMUM_ONE_TRIP_LATENCY = <%= minimum_one_trip_latency() %>
+    </script>
+  </head>
+  <body class="bg-black">
+    <div class="portrait-mode">
+      {@inner_content}
+    </div>
+    <div class="landscape-mode">
+      <div class="screen">
+        <img src={~p"/images/rotate.png"} class="w-6/12 max-w-60" />
+      </div>
+    </div>
+  </body>
+</html>
