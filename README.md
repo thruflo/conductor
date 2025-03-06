@@ -1,7 +1,12 @@
 
 # Conductor
 
-This is a (slightly crazy) [Phoenix.Sync](https://hexdocs.pm/phoenix_sync) demo app. It showcases different modes of real-time sync with Phoenix and ElectricSQL.
+Conductor is a [Phoenix.Sync](https://hexdocs.pm/phoenix_sync) demo app showing different modes of real-time sync with Phoenix and ElectricSQL.
+
+Good entrypoints into the code are:
+
+- the Router at [`./lib/conductor_web/router.ex`](./lib/conductor_web/router.ex)
+- the LiveView at [`./lib/conductor_web/live/index_live.ex`](./lib/conductor_web/live/index_live.ex)
 
 ## Run
 
