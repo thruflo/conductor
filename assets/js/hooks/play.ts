@@ -22,9 +22,10 @@ const viewHook: ViewHook = {
     const classList = document.getElementById('speaker').classList
     classList.add(className)
 
+    const duration = name === 'icecream' ? 4000 : 1800
     timeout = window.setTimeout(() => {
       classList.remove(className)
-    }, 1800)
+    }, duration)
   }
 }
 

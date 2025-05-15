@@ -163,6 +163,13 @@ a.button.progress[disabled]:hover {
 #speaker.playing-tada {
   animation: play-tada 2s infinite;
 }
+#speaker.playing-elephant {
+  animation: play-elephant 2s infinite;
+}
+#speaker.playing-icecream {
+  animation: play-icecream 5.7s infinite;
+}
+
 @keyframes play-clap {
   0% {
     box-shadow: 0 0 0px 0px rgba(0, 255, 255, 0.0);
@@ -232,6 +239,120 @@ a.button.progress[disabled]:hover {
   }
   35% {
     box-shadow: 0 0 120px 0px rgba(0, 255, 255, 0.6);
+    width: 239px;
+  }
+  100% {
+    box-shadow: 0 0 0px 0px rgba(0, 255, 255, 0.0);
+    width: 240px;
+  }
+}
+
+@keyframes play-elephant {
+  0% {
+    box-shadow: 0 0 0px 0px rgba(0, 255, 255, 0.0);
+    width: 240px;
+  }
+  30% {
+    box-shadow: 0 0 120px 0px rgba(0, 255, 255, 0.6);
+    width: 239px;
+  }
+  50% {
+    box-shadow: 0 0 120px 0px rgba(0, 255, 255, 0.6);
+    width: 239px;
+  }
+  75% {
+    box-shadow: 0 0 0px 0px rgba(0, 255, 255, 0.0);
+    width: 240px;
+  }
+}
+
+@keyframes play-icecream {
+  0% {
+    box-shadow: 0 0 0px 0px rgba(0, 255, 255, 0.0);
+    width: 240px;
+  }
+  4% {
+    box-shadow: 0 0 60px 0px rgba(0, 255, 255, 0.4);
+    width: 239px;
+  }
+  9% {
+    box-shadow: 0 0 30px 0px rgba(0, 255, 255, 0.2);
+    width: 240px;
+  }
+  13% {
+    box-shadow: 0 0 60px 0px rgba(0, 255, 255, 0.4);
+    width: 239px;
+  }
+  18% {
+    box-shadow: 0 0 30px 0px rgba(0, 255, 255, 0.2);
+    width: 240px;
+  }
+  22% {
+    box-shadow: 0 0 60px 0px rgba(0, 255, 255, 0.4);
+    width: 239px;
+  }
+  27% {
+    box-shadow: 0 0 30px 0px rgba(0, 255, 255, 0.2);
+    width: 240px;
+  }
+  31% {
+    box-shadow: 0 0 60px 0px rgba(0, 255, 255, 0.4);
+    width: 239px;
+  }
+  36% {
+    box-shadow: 0 0 30px 0px rgba(0, 255, 255, 0.2);
+    width: 240px;
+  }
+  41% {
+    box-shadow: 0 0 60px 0px rgba(0, 255, 255, 0.4);
+    width: 239px;
+  }
+  45% {
+    box-shadow: 0 0 30px 0px rgba(0, 255, 255, 0.2);
+    width: 240px;
+  }
+  50% {
+    box-shadow: 0 0 60px 0px rgba(0, 255, 255, 0.4);
+    width: 239px;
+  }
+  54% {
+    box-shadow: 0 0 30px 0px rgba(0, 255, 255, 0.2);
+    width: 240px;
+  }
+  59% {
+    box-shadow: 0 0 60px 0px rgba(0, 255, 255, 0.4);
+    width: 239px;
+  }
+  63% {
+    box-shadow: 0 0 30px 0px rgba(0, 255, 255, 0.2);
+    width: 240px;
+  }
+  68% {
+    box-shadow: 0 0 60px 0px rgba(0, 255, 255, 0.4);
+    width: 239px;
+  }
+  72% {
+    box-shadow: 0 0 30px 0px rgba(0, 255, 255, 0.2);
+    width: 240px;
+  }
+  77% {
+    box-shadow: 0 0 60px 0px rgba(0, 255, 255, 0.4);
+    width: 239px;
+  }
+  81% {
+    box-shadow: 0 0 30px 0px rgba(0, 255, 255, 0.2);
+    width: 240px;
+  }
+  86% {
+    box-shadow: 0 0 60px 0px rgba(0, 255, 255, 0.4);
+    width: 239px;
+  }
+  90% {
+    box-shadow: 0 0 30px 0px rgba(0, 255, 255, 0.2);
+    width: 240px;
+  }
+  95% {
+    box-shadow: 0 0 60px 0px rgba(0, 255, 255, 0.4);
     width: 239px;
   }
   100% {
