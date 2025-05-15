@@ -16,7 +16,7 @@ export default function ChooseScreen() {
   const snap = useSnapshot(store)
   const tracks = snap.get('tracks')
 
-  const [ instrument, setInstrument ] = useState()
+  const [ instrument, setInstrument ] = useState('tequila')
 
   useEffect(() => {
     timeSync.start()
@@ -36,21 +36,18 @@ export default function ChooseScreen() {
           Choose your track
         </h1>
       </div>
-      <ul className="choose-instruments w-9/12 max-w-96 mt-2 mb-4">
+      <ul className="choose-instruments w-9/12 max-w-96 mt-4 mb-4">
         {tracks.map(track => {
           const isChosen = track.name === instrument
 
-          const coreClassNames = `my-3 py-3 px-8 border rounded-md cursor-pointer`
+          const coreClassNames = `my-3 py-5 px-8 border rounded-md cursor-pointer`
           const classNames = `${coreClassNames}${isChosen ? ' border-brand text-brand' : ''}`
 
           return (
             <li key={track.name} className={classNames}
                 onClick={() => { setInstrument(track.name) }}>
               <br />
-              <br />
               <InstrumentListing name={track.name} />
-              <br />
-              <br />
               <br />
             </li>
           )

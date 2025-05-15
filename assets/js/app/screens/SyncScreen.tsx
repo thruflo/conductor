@@ -260,7 +260,7 @@ export default function SyncScreen() {
         ) : (
           <>
             <div className="w-9/12 max-w-96 mx-auto mt-2 mb-3 text-left">
-              <div className="my-3 py-3 ps-8 pe-6 border rounded-md cursor-pointer flex flex-row justify-between align-center">
+              <div className="my-3 py-5 ps-8 pe-6 border rounded-md cursor-pointer flex flex-row justify-between align-center">
                 <InstrumentListing name={instrument} />
                 {!shouldPlay && (
                   <a className="shrink ps-5 border-s my-1 hover:text-brand"
