@@ -4,7 +4,7 @@ defmodule Conductor.Repo.Migrations.CreateChunks do
   def change do
     create table(:chunks) do
       add :index, :integer, null: false
-      add :value, :halfvec, size: 1_000, null: false
+      add :value, :vector, size: 1_000, null: false
 
       add :track_id, references(:tracks, on_delete: :delete_all), null: false
     end

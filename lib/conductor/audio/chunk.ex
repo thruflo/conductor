@@ -5,7 +5,7 @@ defmodule Conductor.Audio.Chunk do
     belongs_to :track, Conductor.Audio.Track
 
     field :index, :integer
-    field :value, Pgvector.Ecto.HalfVector
+    field :value, Pgvector.Ecto.Vector
   end
 
   def changeset(chunk, attrs) do
