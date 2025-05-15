@@ -3,6 +3,16 @@ defmodule Mix.Tasks.Populate do
   alias Conductor.Audio
   alias Conductor.Bootstrap
 
+  def run([]) do
+    [:postgrex, :ecto]
+    |> Enum.each(&Application.ensure_all_started/1)
+
+    Conductor.Repo.start_link()
+
+    Audio.get_track_for("tequila", "tequila")
+    |> Bootstrap.populate_chunks()
+  end
+
   def run([song, name]) do
     [:postgrex, :ecto]
     |> Enum.each(&Application.ensure_all_started/1)

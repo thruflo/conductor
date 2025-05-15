@@ -56,5 +56,23 @@ function Contents({ name }) {
         </>
       )
     break
+
+    case 'tequila':
+      return (
+        <>
+          <g clip-path="url(#clip0_8_5)">
+          <rect width="32" height="32" fill="url(#pattern0_8_5)"/>
+          </g>
+          <defs>
+          <pattern id="pattern0_8_5" patternContentUnits="objectBoundingBox" width="1" height="1">
+          <use xlink:href="#image0_8_5" transform="scale(0.03125)"/>
+          </pattern>
+          <clipPath id="clip0_8_5">
+          <rect width="32" height="32" fill="white"/>
+          </clipPath>
+          <image id="image0_8_5" width="32" height="32" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEuElEQVRYCeWWW4ydUxSAz5lpVVtRJLTumRKXjkilolQkEn2UlDZDIoNGEx4IDx5EpJmZB0IEEemLiqThTXhwCVKVIS5FMtKqW5lkZCooQgk67Zw5vm+dvX//uXWiD/pgJ9+stddae++1197/PlOp1+s9lUbrTfL/J2LnVKJ6xLd+JJKosuhR1Wp1GnkrFdgIf0Drfagfojr6ZCbJv5AL4dGRkZHNQ0NDdebvOn5OGuTg02E/3AwnwDTYykdT1hvexuLqXmb9v8AWOAds2romUGHn+Q4MoH8SQ9If+lao06JFWKcYbO/ALQYhc2LFmLISFXASjJ/DUvStSPtyEJxEYeuaTJpDv8EXw90DAwNuDldjE52OIhLAYdQkwVPwE3wIRydqSJs78ag6NX02j+0MuBy+6e/vj8zTwsUu8DU3Fo8JkF/DClgETmRrvZANa4e/jPHIlsGEuiHIWY/AwF4CzfAHuAiuSfJqzHPRu5Yeny1Xcor4K+n/7K5pLu68XXdfBKQy7SZ4GXwEp4DtAL5pqCWp3gQxU9gORHSl0o90Hhvm7p+gAVF6ZM7wM3QTmIAl7oAJLGPHCmDPx/M4+k7G2Pycx0NrVCapnUWnBPoI9SJa+iXgxTOBnGQk4+IkV0MO4rsR9qG/iTwbdoFxjp29MTBPeib693AiTMJVjkbmRNsmw/creFekPkNDXJjGuYlDNi+PB5V35yU0meNhO5wEtkgQaSIuUN79j9jegN9hLXNZkVeJ8Svys5y1xWvHgJ7h4eEe5A4YTPo89LbXEFskjnwB7oPrwPtjrHO8Ah+7curnu9IxmVz+CGLAy7ARFsOzkMufq5AvpYuZ7Bp4AN6H1bAusR+5HfL8eZ6mJOYQ4BGUjV/SOQ/bXnwPZocTpTiPy116wZzUvslfCptgEXiJPZpL4F1YxViPzq+q6WJqyOefs/AZvpbglfh26fc4sOVyerH8CXfcPlgIvgHPYzPxk9HXw3HgL+NlzBWVwBdJYGtvZqcVubxW8+uq+6qNwlo4Jo3IScYxYH8MnoHl4O+I9pVp/Ab0rXAveFfGofU4mmufJnAHVuF6WAM3wDzYA5PgPywLYDGcC8fCfHgLLG8fbGK33osx9OfgIdA/F7tHZaLqByMjDeWGc4L+TQS8rZ2+3/UqWAr+SvrJecbb4EkYJ3aQuBr6bvTzkY4bRbxE/xH0U2EP+hisSP6ounrRCPJ2vwd3akS6+0g0+ZqSxnYaeGZ3pPgxdB8nK+Cjtg02g+1+eBF8Y6LF95x0F/aB8f/Dr7D5kPiFxNmqpn6+tHZt38JZ8Cnj+pDubjWshw/AcV5Wq/IdvAYLiPUIZsq7KSdwF0H3wAbwAv4J3nRL1sp8bHvhYfCnXH0LvA5+jjaPzhdyHTzFwrch/SKaL6EGHDbL/jT4r5U7dlEvmH7POVfBvnY/RS+cF/YKuB0uAJPT/xuMwhMs/gXSoy3ehLyodh1WImzK9CTbL+wR2PgTdn3Jlvt2jfcp99EKvxLyD1TYygMclHcWicQs/zxUdqPlCXO/Rfamvv/AOF9O3LV8Tq1I0XICxcKF598psZs0JOZKSXp09sOWEmqbuTy4zXk4hrR4eeeHM81/M+ZvjLIMFMY11wQAAAAASUVORK5CYII="/>
+          </defs>
+        </>
+      )
   }
 }

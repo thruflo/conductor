@@ -10,4 +10,4 @@
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
 
-{:ok, _song, _tracks} = Conductor.Bootstrap.bootstrap_song("arena")
+{:ok, _song, _tracks} = Conductor.Bootstrap.bootstrap_song("tequila")

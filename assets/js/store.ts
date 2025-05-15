@@ -6,7 +6,7 @@ const KEY = 'conductor:store'
 function stringify(data) {
   return JSON.stringify(data, (_key, value) => (
     typeof value === "bigint"
-    ? JSON.rawJSON(value.toString())
+    ? `${value.toString()}n`
     : value
   ))
 }

@@ -1,7 +1,7 @@
 import * as Audio from './audio'
 import { assetPath } from './assets'
 
-const sounds = ['clap', 'tada']
+const sounds = ['elephant', 'icecream', 'tada']
 
 export async function prepareSounds() {
   await Audio.start()

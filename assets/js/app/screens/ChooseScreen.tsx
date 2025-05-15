@@ -33,7 +33,7 @@ export default function ChooseScreen() {
           />
         </div>
         <h1 className="text-2xl">
-          Choose your instrument
+          Choose your track
         </h1>
       </div>
       <ul className="choose-instruments w-9/12 max-w-96 mt-2 mb-4">
@@ -46,7 +46,12 @@ export default function ChooseScreen() {
           return (
             <li key={track.name} className={classNames}
                 onClick={() => { setInstrument(track.name) }}>
+              <br />
+              <br />
               <InstrumentListing name={track.name} />
+              <br />
+              <br />
+              <br />
             </li>
           )
         })}
