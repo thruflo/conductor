@@ -1,5 +1,5 @@
 Postgrex.Types.define(
   Conductor.PostgrexTypes,
-  [Pgvector.Extensions.Halfvec] ++ Ecto.Adapters.Postgres.extensions(),
+  [Pgvector.Extensions.Vector] ++ Ecto.Adapters.Postgres.extensions(),
   []
 )
